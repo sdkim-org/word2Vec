@@ -167,10 +167,10 @@ def generate_batch(data, batch_size, num_skips, skip_window, data_index):
     assert num_skips <= 2 * skip_window
 
     temp = 'batch_size {}, num_skips {}, skip_window {}, data_index {}'
-    # 최초 : batch_size 8, num_skips 2, skip_window 1, data_index 0
+    # 최초 : batch_size 128, num_skips 2, skip_window 1, data_index 0
     # 학습 : batch_size 128, num_skips 2, skip_window 1, data_index 640000
     #       data_index는 64로 시작해서 64씩 증가한다. 나머지는 변경되지 않는다.
-    # print(temp.format(batch_size, num_skips, skip_window, data_index))
+    #print(temp.format(batch_size, num_skips, skip_window, data_index))
 
     # ndarray에 값을 주지 않았다면 난수가 사용된다. 앞부분 10개만 표시.
     # batch는 1차원, labels는 2차원.
